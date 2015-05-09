@@ -10,4 +10,4 @@ docker build -t pashi/garmin-antfs .
 Run docker
 ----------
 
-docker run -i --rm --privileged -v /dev/bus/usb:/dev/bus/usb -t pashi/garmin-antfs
+docker run --rm -v /opt/garmin/fitfiles:/app/data -v /dev/bus/usb:/dev/bus/usb -i -t pashi/garmin-antfs
