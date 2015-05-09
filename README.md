@@ -4,10 +4,10 @@ Garmin antfs on docker
 Build docker
 ------------
 
-docker build -t garmin-antfs .
+docker build -t pashi/garmin-antfs .
 
 
 Run docker
 ----------
 
-docker run -i --rm --privileged -v /dev/bus/usb:/dev/bus/usb -t garmin-antfs
+docker run -i --rm --privileged -v /dev/bus/usb:/dev/bus/usb -t pashi/garmin-antfs

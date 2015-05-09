@@ -1,4 +1,3 @@
-#FROM ubuntu:utopic
 FROM python:2.7
 MAINTAINER Pasi Lammi <pasi.lammi@iki.fi>
 ENV PYTHONUNBUFFERED 1
