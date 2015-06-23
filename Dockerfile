@@ -14,5 +14,7 @@ RUN git clone https://github.com/Tigge/antfs-cli.git
 RUN cd pyusb && python setup.py install && cd ..
 RUN cd openant && python setup.py install && cd ..
 RUN cd antfs-cli && python setup.py install && cd ..
+RUN mkdir -p /root/.config/
+RUN ln -s /app/data /root/.config/antfs-cli
 
 ENTRYPOINT ["/bin/bash"]
